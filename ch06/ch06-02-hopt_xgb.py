@@ -25,7 +25,7 @@ param_space = {
     'min_child_weight': hp.loguniform('min_child_weight', np.log(0.1), np.log(10)),
     'max_depth': hp.quniform('max_depth', 3, 9, 1),
     'subsample': hp.quniform('subsample', 0.6, 0.95, 0.05),
-    'colsample_bytree': hp.quniform('subsample', 0.6, 0.95, 0.05),
+    'colsample_bytree': hp.quniform('colsample_bytree', 0.6, 0.95, 0.05),
     'gamma': hp.loguniform('gamma', np.log(1e-8), np.log(1.0)),
     # 余裕があればalpha, lambdaも調整する
     # 'alpha' : hp.loguniform('alpha', np.log(1e-8), np.log(1.0)),
